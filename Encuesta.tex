@@ -7,7 +7,7 @@
 \usepackage{fancyhdr}
 \usepackage{parskip} % Para evitar la indentación y mejorar la separación entre párrafos
 \usepackage{amssymb} % Paquete para símbolos adicionales
-
+\usepackage{comment}
 
 \geometry{letterpaper, margin=1in}
 
@@ -46,21 +46,21 @@ Por favor, complete la siguiente encuesta proporcionando sus respuestas en los e
 \begin{enumerate}
     \item ¿Cuantos alumnos aproximadamente tiene el establecimiento? 
         \begin{itemize}[label=$\square$]
-            \item De 50 a 100 alumnos
+            \item Menos de 100 alumnos
             \item De 100 a 200 alumnos
             \item De 200 a 300 alumnos
             \item Más de 300 alumnos
             \item No lo sé
         \end{itemize}
-    \item ¿Considera que su liceo cuenta con suficiente espacio físico para la cantidad de estudiantes que posee? \\[0.5cm]
+    \item ¿Cómo se evalúa el rendimiento de los alumnos?  \\[0.5cm]
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-    \item ¿Qué tan seguro considera que es el entorno del liceo? \\[0.5cm]
+    \item ¿Se brindan retroalimentaciones? ¿Como cuales? \\[0.5cm]
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-    \item ¿Cómo se evalúa el rendimiento de los alumnos y se brindan retroalimentaciones? \\[0.5cm]
+    \item ¿Qué métodos de enseñanza se utilizan en clases? \\[0.5cm]
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
@@ -68,32 +68,27 @@ Por favor, complete la siguiente encuesta proporcionando sus respuestas en los e
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
-    \item ¿Qué dificultades enfrenta para implementar métodos de enseñanza más innovadores? \\[0.5cm]
+    \item ¿Qué dificultades enfrenta el establecimiento para implementar métodos de enseñanza más innovadores? \\[0.5cm]
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
-    \item ¿Cree que la motivacion de los alumnos por estudiar se ha visto reducida?, ¿Por qué?\\[0.5cm]
+    \item ¿Cree que la motivación de los alumnos por estudiar se ha visto reducida?, ¿Por qué? \\ TODO: Preguntar sobre palabra motivación \\[0.5cm]
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
-    \item ¿Cree que la motivacion de los profesores por enseñar se ha visto reducida?, ¿Por qué?\\[0.5cm]
+    \item ¿Cree que la motivación de los profesores por enseñar se ha visto reducida?, ¿Por qué? \\ TODO: Preguntar sobre palabra motivación \\[0.5cm]
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
-        % \newpage
-    \item De las siguiente opciones, ¿cual diria que es el principal problema que enfrenta el establecimiento en cuanto a la educacion?
-        \begin{itemize}[label=$\square$]
-            \item Falta de recursos
-            \item Falta de personal
-            \item Falta de motivacion
-            \item Falta de capacitacion
-            \item Otro problema: \underline{\hspace{0.5\linewidth}}
-            \item Ninguno de los anteriores
-        \end{itemize}
-    % \item ¿Cual tarea de las que realiza actualmente cree que ocupa tiempo que podria ser mejor utilizado en otra cosa? (Depende del entrevistado)\\[0.5cm]
-    %     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-    %     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-    %     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
+    \item De las siguiente opciones, ¿cual diría que es el principal problema que enfrenta el establecimiento en cuanto al aprendizaje en aula? 
+    \begin{itemize}[label=$\square$]
+        \item Falta de recursos
+        \item Falta de personal
+        \item Falta de motivación
+        \item Falta de capacitación
+        \item Otro problema: \underline{\hspace{0.5\linewidth}}
+        \item Ninguno de los anteriores
+    \end{itemize}
 \end{enumerate}
 
 \newpage
@@ -108,7 +103,7 @@ Por favor, complete la siguiente encuesta proporcionando sus respuestas en los e
         \item No lo sé
         \item Otra cantidad: \underline{\hspace{0.5\linewidth}}
     \end{itemize}
-    \item ¿Con qué frecuencia participa en actividades de desarrollo profesional? \\[0.5cm]
+    \item Si usted o algún compañero de trabajo falta, ¿cómo se cubre el puesto? \\[0.5cm]
     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
@@ -121,10 +116,7 @@ Por favor, complete la siguiente encuesta proporcionando sus respuestas en los e
         \item Otro problema: \underline{\hspace{0.5\linewidth}}
         \item Ninguna de las anteriores
     \end{itemize}
-    % \item ¿Cual tarea de las que realiza actualmente cree que ocupa tiempo que podria ser mejor utilizado en otra cosa? (Depende del entrevistado)\\[0.5cm]
-    %     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-    %     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-    %     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
+
 \end{enumerate}
 
 \newpage
@@ -134,45 +126,96 @@ Por favor, complete la siguiente encuesta proporcionando sus respuestas en los e
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
+
+    \item ¿Qué tan seguro considera que es el entorno del liceo? 
+        \begin{center}
+            $\square$ Muy inseguro \hspace{0.7cm} $\square$ Inseguro \hspace{0.7cm} $\square$ Regular \hspace{0.7cm} $\square$ Seguro \hspace{0.7cm} $\square$ Muy Seguro
+        \end{center}
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+
     \item ¿Cómo describiría el clima escolar en términos de relaciones entre alumnos, profesores y personal? %\\[0.5cm]
     \begin{center}
-        Horrible \hspace{0.7cm} Malo \hspace{0.7cm} Regular \hspace{0.7cm} Bueno \hspace{0.7cm} Excelente
+        $\square$ Horrible \hspace{0.7cm} $\square$ Malo \hspace{0.7cm} $\square$ Regular \hspace{0.7cm} $\square$ Bueno \hspace{0.7cm} $\square$ Excelente
     \end{center}
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
-    % \item ¿Existe algo que cree que podria hacer su trabajo mas facil?
-    % \begin{center}
-    %     [\hspace*{0.25cm}] Si \hspace{1cm} [\hspace*{0.25cm}] No
-    % \end{center}
-    % Si respondio si en la pregunta anterior, ¿que seria? \\[0.5cm]
-    %     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-    %     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-    %     \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
+    
+    \item ¿Con qué frecuencia participa en actividades de desarrollo profesional? (Capacitaciones, talleres, charlas, etc.) \\[0.5cm]
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
+
+    \item ¿Qué tipo de actividades de desarrollo profesional prefiere? \\[0.5cm]
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
+
+    \item ¿Cree que exista alguna tarea de las que realiza comúnmente que ocupa tiempo que podría ser mejor utilizado en otra cosa? \\[0.5cm]
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
+    \newpage
     \item ¿Qué tipo de apoyo o servicios están disponibles para el bienestar de los estudiantes? \\[0.5cm]
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
-    \item ¿Tiene alguna sugerencia o recomendacion que cree que podria mejorar al establecimiento?
-    \begin{center}
-        [\hspace*{0.25cm}] Si \hspace{1cm} [\hspace*{0.25cm}] No
-    \end{center}
-    Si respondio si en la pregunta anterior, ¿que seria? \\[0.5cm]
+    
+    \item ¿Qué tipo de apoyo o servicios están disponibles para el bienestar de los funcionarios de la institución? \\[0.5cm]
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
         \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
-        % \item ¿Cual tarea de las que realiza actualmente cree que ocupa tiempo que podria ser mejor utilizado en otra cosa?\\[0.5cm]
-        % \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-        % \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
-        % \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
-        \item De las siguientes opciones, ¿cuál cree que es el principal problema que enfrenta el establecimiento a nivel general?
+
+    \item ¿Tiene alguna sugerencia o recomendación que cree que podría mejorar al establecimiento? (Tecnología, personal, seguridad, etc.)
+    \begin{center}
+        [\hspace*{0.25cm}] Si \hspace{1cm} [\hspace*{0.25cm}] No
+    \end{center}
+    Si respondió si en la pregunta anterior, ¿que seria? \\[0.5cm]
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm} \\
+        \underline{\hspace{0.95\linewidth}} \vspace{0.3cm}
+    \item De las siguientes opciones, ¿cuál cree que es el principal problema que enfrenta el establecimiento a nivel general?
         \begin{itemize}[label=$\square$]
             \item Falta de recursos
             \item Falta de personal
-            \item Falta de motivacion
-            \item Falta de capacitacion
+            \item Falta de motivación
+            \item Falta de capacitación
             \item Otro problema: \underline{\hspace{0.5\linewidth}}
             \item Ninguno de los anteriores
         \end{itemize}
 \end{enumerate}
 \end{document}
+
+\begin{comment}
+
+    Educación:
+    1. ¿Cuantos alumnos aproximadamente tiene el establecimiento? (Alternativas) 
+    4. ¿Cómo se evalúa el rendimiento de los alumnos? 
+    5. ¿Se brindan retroalimentaciones? ¿Como cuales?
+    . ¿Qué métodos de enseñanza utiliza en sus clases?
+    . ¿Hay algún problema recurrente en el seguimiento de los planes de estudio?
+    6. ¿Qué dificultades enfrenta el establecimiento para implementar métodos de enseñanza más innovadores?
+    7. ¿Cree que la motivación de los alumnos por estudiar se ha visto reducida?, ¿Por qué? TODO: Preguntar sobre palabra motivación
+    8. ¿Cree que la motivación de los profesores por enseñar se ha visto reducida?, ¿Por qué? TODO: Preguntar sobre palabra motivación
+    9. De las siguiente opciones, ¿cual diría que es el principal problema que enfrenta el establecimiento en cuanto al aprendizaje en aula? (Alternativas)
+
+    Funcionarios:
+    1. ¿En promedio cuantas personas diría que trabajan en este establecimiento? (Incluido profesores, personal de limpieza, administrativos, etc.) (Alternativas)
+    2. Si usted o algún compañero de trabajo falta, ¿cómo se cubre el puesto? 
+    3. De las siguientes opciones, ¿cuál cree que es el principal problema que enfrenta el personal del establecimiento? (Alternativas)
+
+    Generales:
+    1. ¿Cuál es el principal objetivo que persigue este establecimiento?
+    . ¿Qué tan seguro considera que es el entorno del liceo?
+    2. ¿Cómo describiría el clima escolar en términos de relaciones entre alumnos, profesores y personal? (Selección)
+    . ¿Con qué frecuencia participa en actividades de desarrollo profesional? (Capacitaciones, talleres, charlas, etc.) <-- General
+    . ¿Qué tipo de actividades de desarrollo profesional prefiere?
+    . ¿Cree que exista alguna tarea de las que realiza comúnmente que ocupa tiempo que podría ser mejor utilizado en otra cosa?
+    3. ¿Qué tipo de apoyo o servicios están disponibles para el bienestar de los estudiantes? 
+    3. ¿Qué tipo de apoyo o servicios están disponibles para el bienestar de los funcionarios de la institución? 
+    4. ¿Tiene alguna sugerencia o recomendación que cree que podría mejorar al establecimiento? (Tecnología, personal, seguridad, etc.)
+    5. De las siguientes opciones, ¿cuál cree que es el principal problema que enfrenta el establecimiento a modo general? (Alternativas)
+
+\end{comment}

@@ -1,4 +1,5 @@
 # ISW-Proyecto-Backup
+ 
 
 > [!CAUTION]
 > Utilizar git pull cada vez que trabajes para tener actualizada tu rama local y evitar futuros conflictos. (Al menos por el momento, talvez a futuro los ayudantes nos enseñan una mejor practica o forma de solucionar esta situación)
@@ -8,9 +9,15 @@
 >```
 
 - [ISW-Proyecto-Backup](#isw-proyecto-backup)
+  - [TODO](#todo)
   - [Comandos Basicos](#comandos-basicos)
     - [SOFTWARE](#software)
     - [GIT](#git)
+
+## TODO
+
+- [ ] Acotar el area del rubro.
+- Tipos de 
 
 ## Comandos Basicos
 
@@ -81,7 +88,7 @@ git add nombreArchivo
 Quitar un archivo del stage:
 
 ```bash
-git restore --stage nombreArchivo
+git restore --staged nombreArchivo
 ```
 
 "Guardar" commit:

@@ -14,6 +14,7 @@
 \usepackage[table]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{listings}
+\usepackage{qrcode}
 \usepackage{color} % Para definir colores
 % \usepackage{parskip}
 
@@ -57,7 +58,11 @@ Ante cualquier duda, consulta, sugerencia o reclamo no dude en contactarnos a tr
 \vspace*{1cm}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.3\textwidth]{img/qr.jpg}
+    \href{https://docs.google.com/forms/d/e/1FAIpQLSeKKbTvFFIiVrdrvgAoR1Vlj_TvlZGq1eVa1ONmcvBIGtuB6w/viewform}{
+        \begin{tikzpicture}
+            \node[scale=2.5] {\qrcode{https://docs.google.com/forms/d/e/1FAIpQLSeKKbTvFFIiVrdrvgAoR1Vlj_TvlZGq1eVa1ONmcvBIGtuB6w/viewform}};
+        \end{tikzpicture}
+    }
 \end{figure}
 
 \end{document}

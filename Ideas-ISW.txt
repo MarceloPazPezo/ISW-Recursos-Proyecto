@@ -1,0 +1,28 @@
+1. app de control
+Resgistrar la entrada y salida de los estudiantes y 
+personal del liceo ademas de los visitantes.
+
+Uso de la huella digital o con targetas  para controlar la 
+asistencia, ademas contaria con notificar a los padres 
+cuando sus hijos ingresen o salgan del liceo.
+
+
+2. app para comunicación 
+consistiria en mantener en comunicación padres, estudiantes,
+docentes y funcionarios
+
+Mesajeria, envio de notificaciones de eventos, reuniones,
+modificaciones de horario, foros.
+
+
+3. gestión 
+ plataforma para administrar permisos, vacaciones y horarios
+,ademas en ella podemos evaluar el desempeño de los 
+funcionarios y solicitar capacitaciones, tabien contaria con notificar reuniones, capacitaciones o cambios.
+
+
+4. motivar  a los estudiantes 
+app o plataforma interactiva con minijuegos con contenido de distintas
+asignaturas, con las cuales se puede evaluar o enseñar las unidades del semestre
+de una forma mas entretenida con la cual los estudiantes puedan motivarse, al terminar cada minijuego este les dara 
+una retroalimentación inmediata.

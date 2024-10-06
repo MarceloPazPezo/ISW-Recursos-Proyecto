@@ -1,6 +1,6 @@
 \documentclass{templateNote}
 \usepackage{tcolorbox}
-\usepackage{hyperref}
+% \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{soul}
@@ -12,15 +12,19 @@
 \usepackage{tikz}
 \usepackage{xcolor}
 \usepackage[table]{xcolor}
+\usepackage[hidelinks]{hyperref}
 \usepackage{listings}
+\usepackage{qrcode}
 \usepackage{color} % Para definir colores
 % \usepackage{parskip}
+
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
 
 \begin{document}
 \imagenlogoU{img/logo-ubb-txt-face.png}
 \linklogoU{https://www.ubiobio.cl/w/} 
 % \imagenlogoD{img/logo-ubb-txt-face.png} 
-\titulo{Solicitud de respuesta encuesta}
+\titulo{Solicitud de respuesta a encuesta}
 % \asignatura{Arquitectura de Computadores}
 % \autor{
 %     \indent
@@ -31,16 +35,16 @@
 \portada
 \margenes 
 
-\noindent\textit{A quien corresponda:}\\
+\noindent\textit{Estimado/a:}\\
 
-Junto con saludar me permito presentarnos, somos estudiantes de 4to año de ingeniería civil informática de la universidad del bio bio y redactamos este documento para solicitar su apoyo en la recopilación de información referente a la educación media en las instituciones escolares. Esta recopilación de información se esta llevando  cabo a traves de una encuesta en linea cuyo enlace se adjunta en este documento en forma de un código QR. La colaboración de docentes, directivos y funcionarios dentro de la institución es fundamental para nuestros estudios. Cabe recalcar que no se solicitara información personal ni de contacto, solo información referente a la institución y su funcionamiento.  
+Esperamos que se encuentre bien. Somos estudiantes de cuarto año de Ingeniería Civil Informática de la Universidad del Bio Bio, redactamos este documento para solicitar su apoyo en la recopilación de información referente a la educación media en las instituciones escolares. Esta recopilación se esta llevando cabo a traves de un formulario en linea cuyo enlace se adjunta en este documento en forma de un código QR. \\La colaboración de docentes, directivos y funcionarios dentro de la institución es fundamental para nuestros estudios. Cabe recalcar que no se solicitara información personal ni de contacto, solo información referente a la institución y su funcionamiento.  
 \\\\
-Ante cualquier duda, consulta, sugerencia o reclamo no dude en contactar a cualquiera de nuestros correos institucionales:
+Ante cualquier duda, consulta, sugerencia o reclamo no dude en contactarnos a traves de cualquiera de nuestros correos institucionales:
 \begin{itemize}
-    \item \url{nicolas.gomez2101@alumnos.ubiobio.cl}
-    \item \url{marcelo.paz2101@alumnos.ubiobio.cl}
-    \item \url{bastian.rodriguez2101@alumnos.ubiobio.cl}
-    \item \url{claudia.sobino2101@alumnos.ubiobio.cl}
+    \item \email{nicolas.gomez2101@alumnos.ubiobio.cl}
+    \item \email{marcelo.paz2101@alumnos.ubiobio.cl}
+    \item \email{bastian.rodriguez2101@alumnos.ubiobio.cl}
+    \item \email{claudia.sobino2101@alumnos.ubiobio.cl}
 \end{itemize}
 
 \noindent Sin nada mas que agregar, nos despedimos deseando un buen periodo académico y esperando su colaboración.
@@ -54,7 +58,11 @@ Ante cualquier duda, consulta, sugerencia o reclamo no dude en contactar a cualq
 \vspace*{1cm}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.3\textwidth]{img/qr.jpg}
+    \href{https://docs.google.com/forms/d/e/1FAIpQLSeKKbTvFFIiVrdrvgAoR1Vlj_TvlZGq1eVa1ONmcvBIGtuB6w/viewform}{
+        \begin{tikzpicture}
+            \node[scale=2.5] {\qrcode{https://docs.google.com/forms/d/e/1FAIpQLSeKKbTvFFIiVrdrvgAoR1Vlj_TvlZGq1eVa1ONmcvBIGtuB6w/viewform}};
+        \end{tikzpicture}
+    }
 \end{figure}
 
 \end{document}
